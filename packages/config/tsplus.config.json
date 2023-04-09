@@ -1,0 +1,8 @@
+{
+  "importMap": {
+    "^(.*)/packages/([^/]*)/src(.*)\\.ts$": "@tsplus-library-template/$2$3"
+  },
+  "traceMap": {
+    "^(.*)/packages/([^/]*)/(.*)$": "(@tsplus-library-template/$2) $3"
+  }
+}

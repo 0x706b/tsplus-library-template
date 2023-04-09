@@ -1,0 +1,34 @@
+{
+  "name": "@tsplus-library-template/scripts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "bin": {
+    "tsplus-library-pack": "./bin/tsplus-library-template-pack.js"
+  },
+  "exports": {
+    "./*": "./build/esm/*.js",
+    "./*.js": "./build/esm/*.js"
+  },
+  "scripts": {
+    "build": "yarn org:tsc -b ./tsconfig.json",
+    "format": "prettier --list-different -w src/**/*.ts && eslint --fix src/**/*.ts",
+    "circular": "yarn org:madge --circular --no-spinner --warning build/esm",
+    "clean": "rm -rf ./build"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-class-properties": "^7.12.13",
+    "@babel/plugin-syntax-typescript": "^7.20.0",
+    "@babel/types": "^7.20.7",
+    "@tsplus-library-template/config": "workspace:*",
+    "@tsplus-library-template/eslint-config": "workspace:*",
+    "@types/babel__core": "^7.20.0",
+    "@yarnpkg/cli": "4.0.0-rc.39",
+    "@yarnpkg/core": "4.0.0-rc.39",
+    "recast": "^0.22.0"
+  },
+  "dependencies": {
+    "@types/glob": "^8.1.0",
+    "glob": "^9.3.4"
+  }
+}

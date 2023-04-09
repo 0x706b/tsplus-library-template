@@ -1,0 +1,10 @@
+{
+  "name": "@tsplus-library-template/config",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./prettier": {
+      "require": "./prettier.config.cjs"
+    }
+  }
+}
