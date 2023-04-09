@@ -20,7 +20,7 @@
     "test": "ultra -r test",
     "lint": "ultra -r lint",
     "circular": "madge --ts-config ./tsconfig.madge.json --circular --warning packages/*/build/esm",
-    "postinstall": "echo tsplus-install",
+    "postinstall": "tsplus-install",
     "org:tsc": "cd $INIT_CWD && tsc",
     "org:babel": "cd $INIT_CWD && babel",
     "org:concurrently": "cd $INIT_CWD && concurrently",
@@ -36,7 +36,7 @@
     "@babel/plugin-transform-modules-commonjs": "^7.20.11",
     "@changesets/changelog-git": "^0.1.14",
     "@changesets/cli": "^2.26.0",
-    "@tsplus/installer": "0.0.170",
+    "@tsplus/installer": "^0.0.171",
     "@types/benchmark": "^2.1.2",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/experimental-utils": "^5.51.0",
@@ -52,7 +52,7 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "madge": "^6.0.0",
     "prettier": "^2.8.4",
-    "typescript": "https://github.com/0x706b/typescript/raw/23f2ac220f/typescript-5.0.0-tsplus.20230306.tgz",
+    "typescript": "^5.0.4",
     "ultra-runner": "^3.10.5"
   },
   "resolutions": {

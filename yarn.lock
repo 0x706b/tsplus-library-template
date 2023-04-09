@@ -1128,9 +1128,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@tsplus/installer@npm:0.0.170":
-  version: 0.0.170
-  resolution: "@tsplus/installer@npm:0.0.170"
+"@tsplus/installer@npm:^0.0.171":
+  version: 0.0.171
+  resolution: "@tsplus/installer@npm:0.0.171"
   dependencies:
     mkdirp: "npm:^1.0.4"
     rimraf: "npm:^3.0.2"
@@ -1139,7 +1139,7 @@ __metadata:
     zlib: "npm:^1.0.5"
   bin:
     tsplus-install: bin/tsplus-install
-  checksum: 6756a284428307f3d0990c132545126e8135c2083a19fe1134abfa4873d352a4533f293701f4e34e63c7bc44293b08ce16b759dc0031b774cfcc4cbe40dcd46c
+  checksum: f161cbcd75a322f434942374efc85e3c2a9a641886f3895d043655ff5df68e7eda9d7106dad9d3fdaa19792e0c32f40fd57c9a63590902aa36dd94e9f1f3cbcb
   languageName: node
   linkType: hard
 
@@ -7612,7 +7612,7 @@ __metadata:
     "@babel/plugin-transform-modules-commonjs": "npm:^7.20.11"
     "@changesets/changelog-git": "npm:^0.1.14"
     "@changesets/cli": "npm:^2.26.0"
-    "@tsplus/installer": "npm:0.0.170"
+    "@tsplus/installer": "npm:^0.0.171"
     "@types/benchmark": "npm:^2.1.2"
     "@typescript-eslint/eslint-plugin": "npm:^5.51.0"
     "@typescript-eslint/experimental-utils": "npm:^5.51.0"
@@ -7628,7 +7628,7 @@ __metadata:
     eslint-plugin-simple-import-sort: "npm:^10.0.0"
     madge: "npm:^6.0.0"
     prettier: "npm:^2.8.4"
-    typescript: "https://github.com/0x706b/typescript/raw/23f2ac220f/typescript-5.0.0-tsplus.20230306.tgz"
+    typescript: "npm:^5.0.4"
     ultra-runner: "npm:^3.10.5"
   languageName: unknown
   linkType: soft
@@ -7753,16 +7753,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@https://github.com/0x706b/typescript/raw/23f2ac220f/typescript-5.0.0-tsplus.20230306.tgz":
-  version: 5.0.0-tsplus.20230306
-  resolution: "typescript@https://github.com/0x706b/typescript/raw/23f2ac220f/typescript-5.0.0-tsplus.20230306.tgz"
-  bin:
-    tsc: ./bin/tsc
-    tsserver: ./bin/tsserver
-  checksum: 121c59ce198bff79d49bc71747d35f6a58d648e74c0a21dc9332e9bddd8b7e378c14ff4c2d4ca5c494ec835b18ce6e4cfece614cad8b26d54def7194490fe72e
-  languageName: node
-  linkType: hard
-
 "typescript@npm:^3.9.10, typescript@npm:^3.9.5, typescript@npm:^3.9.7":
   version: 3.9.10
   resolution: "typescript@npm:3.9.10"
@@ -7783,13 +7773,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@https%3A//github.com/0x706b/typescript/raw/23f2ac220f/typescript-5.0.0-tsplus.20230306.tgz#optional!builtin<compat/typescript>":
-  version: 5.0.0-tsplus.20230306
-  resolution: "typescript@patch:typescript@https%3A//github.com/0x706b/typescript/raw/23f2ac220f/typescript-5.0.0-tsplus.20230306.tgz#optional!builtin<compat/typescript>::version=5.0.0-tsplus.20230306&hash=1f5320"
+"typescript@npm:^5.0.4":
+  version: 5.0.4
+  resolution: "typescript@npm:5.0.4"
   bin:
-    tsc: ./bin/tsc
-    tsserver: ./bin/tsserver
-  checksum: 2904150c0dce5199ad12b1a7aae660de4c5c95b185a6d8e544d27776c40a496598017d44b3b0db60f7947477563b3b047c1b9ea84ebfb21b6d88f58191f66f70
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 56649de784c427e8f3f63d4ebfcada4fcf03bb2a301f3327342111798db7f26f8a86285f979f376cf6cec4774bd96b4650f2693a07fc409f4544ad4c4d9fe4c9
   languageName: node
   linkType: hard
 
@@ -7810,6 +7800,16 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 09f82f25664c79d5cccc389502175093becf51d691b443c79294303681544a399fb42f8384b535ddeba48cadb64e7d14b42de40d8ade4418bb43174989dd8685
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@npm%3A^5.0.4#optional!builtin<compat/typescript>":
+  version: 5.0.4
+  resolution: "typescript@patch:typescript@npm%3A5.0.4#optional!builtin<compat/typescript>::version=5.0.4&hash=1f5320"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: be94f10d96a8443e5524bce56705712ae1aa6c67618dd2c316ddb616ea614a3eb675c34e4af16ab09f1a0ab694173c704ba5b23d8b8bda31cb31c1ca078c486f
   languageName: node
   linkType: hard
 
